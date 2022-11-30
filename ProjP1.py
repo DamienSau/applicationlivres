@@ -11,7 +11,6 @@ from operator import itemgetter
 import livres
 
 # un livre doit contenir toute les informations sur le livre
-# infolivre permet d'ajouter les informations dans la liste livre
 
 class unLivre:
 
@@ -156,7 +155,6 @@ class bibliotheque:
             if l%5==0:
                 liv1.append(lignes[l][10:-1])
         # construction de la liste des noms de fichiers de la nouvelle bibliotheque:
-        os.chdir(self.path)
         liv2 = bibliotheque()
         liv2.completebibli(self.path, True)
         os.chdir(self.curentpath)
@@ -166,7 +164,7 @@ class bibliotheque:
 B = bibliotheque()
 B.ouvrages()
 B.auteurs()
-# B.update()
+# B.update()  # ne fonctionne pas
 
 
 
