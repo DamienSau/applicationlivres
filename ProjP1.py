@@ -8,7 +8,7 @@ import aspose.words as aw
 from operator import itemgetter
 
 
-import livres3
+import livres
 
 # un livre doit contenir toute les informations sur le livre
 # infolivre permet d'ajouter les informations dans la liste livre
@@ -39,7 +39,7 @@ class bibliotheque:
     def __init__(self):
         self.livres = []
         self.curentpath = os.getcwd()
-        self.path = self.curentpath + "/livres3"
+        self.path = self.curentpath + "/livres"
 
 # a partir du nom du repertoire dans lequel se trouve le repertoire livres, 
 # on peut ajouter des livres a la bibliotheque
@@ -128,7 +128,7 @@ class bibliotheque:
                     file.write(f"nomfichier : {tit[a][t][1]}")
                     file.write("\n")
                 file.write("\n")
-'''
+
     def update(self):
         # identifier les fichiers supprimes et ceux ajoutés
         # on va comparer les fichiers dans ouvrages.txt a ceux du nouveau dossier livre
@@ -162,7 +162,7 @@ class bibliotheque:
         os.chdir(self.curentpath)
         print(liv1)
         print(liv2)
-'''
+        
 B = bibliotheque()
 B.ouvrages()
 B.auteurs()
