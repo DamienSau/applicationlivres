@@ -1,5 +1,8 @@
 #!/bin/env python3
 
+# Nous avons utilisé la partie 1 de BEQUET Clément et ANDRIANJAFY Koloina sous le nom Livre.py
+# "Livre.py" et le répertoire "livres" doivent se trouver dans le répertoire courant
+
 import sys
 import Livre as L
 
