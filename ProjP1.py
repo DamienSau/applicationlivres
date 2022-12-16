@@ -161,10 +161,6 @@ class bibliotheque:
         print(liv1)
         print(liv2)
         
-B = bibliotheque()
-B.ouvrages()
-B.auteurs()
-# B.update()  # ne fonctionne pas
 
 
 
